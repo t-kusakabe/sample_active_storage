@@ -2,7 +2,7 @@ version: '3'
 services:
   app:
     build: .
-    container_name: "sample_active_storage"
+    container_name: "sample_active_storage_app"
     ports:
       - "3000:3000"
     command: bundle exec rails server
@@ -15,7 +15,7 @@ services:
 
   db:
     image: mysql:5.6
-    container_name: "fkg_db"
+    container_name: "sample_active_storage_db"
     ports:
       - "13306:3306"
     volumes:
